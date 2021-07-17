@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Adivinhe o Número</title>
+  </head>
+
+  <body>
+
+    <header class="l-header">
+      <h1 class="c-header__title">Adivinhe o Número</h1>
+    </header>
+
+
+
+
+
+    <main class="l-container">
+
+      <form class="l-form">
+        <h2 class="c-form__subtitle">Hora do Jogo</h2>
+
+        <label class="c-form__label" for="number">
+          Digite um número (0 - 10)
+        </label>
+
+        <input
+          class="c-form__input l-layout__input"
+          type="number"
+          id="number"
+          name="number"
+          placeholder="0"
+          maxlength="10"
+        />
+
+        <button class="c-form__button l-layout__button" type="submit">
+          Jogar
+        </button>
+      </form>
+
+
+      <section class="l-result-box result">
+        <h2 class="c-result-box__status l-layout__status">
+          Adivinhe o número sorteado
+        </h2>
+
+        <p class="c-result-box__attempt">Tentativas: 0</p>
+      </section>
+
+
+      <button
+        class="c-button-start l-layout__button is-button-start--visibility">
+        Jogar novamente
+      </button>
+    </main>
+
+
+
+
+    
+    <footer class="l-footer">
+      <p class="c-footer__description">Adivinhe o Número - 2021 &copy;</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
